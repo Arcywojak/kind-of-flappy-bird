@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flappy bird</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="page-title">
+            Game based on flappy bird
+        </h1>
+        <div class="game-container">
+            <canvas id="canvas" width="300px" height="300px">
+
+            </canvas>
+
+            <div class="road moving-animation">
+               <!-- <img src="./images/road.png" alt=""> -->
+            </div>
+
+            <div id="score-wrapper" class="absolute text-on-canvas turned-off">
+                <h2>
+                    Score: <span id="score">0</span>
+                </h2>
+            </div>
+
+            <div id="play-again" class="absolute turned-off">
+               <button id="play-again-button">
+                   Play again
+               </button>
+            </div>
+
+            <div id="start-game-advice" class="absolute text-on-canvas">
+                <h2>
+                    Click space or tap on the screen
+                </h2>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img width="50" height="50" id="hero-image" src="./images/flying-pumpkin.png">
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img width="50" height="50" id="dead-hero-image" src="./images/dead-pumpkin.png">
+            </div>
+
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
